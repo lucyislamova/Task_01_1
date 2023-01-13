@@ -26,11 +26,11 @@ public class Triangle {
 
     public void checkTriangle(float sideA, float sideB, float sideC) {
         if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
-            throw new IllegalArgumentException("Введите корректные данные: стороны треугольника должны быть больше 0");
+            throw new IllegalArgumentException("Стороны треугольника должны быть больше 0");
         }
         if (sideA > (sideB + sideC) || sideB > (sideB + sideC) || sideC > (sideA + sideB)) {
 
-            throw new IllegalArgumentException("Введите корректные данные: сторона треугольника не может быть больше суммы 2х других сторон");
+            throw new IllegalArgumentException("Сторона треугольника не может быть больше суммы 2х других сторон");
         }
     }
 
